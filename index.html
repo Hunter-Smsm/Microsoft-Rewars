@@ -2,12 +2,13 @@
 	<head>
 		<title>rewards</title>
 		<script>
-			let j = window.location.search[1];
+			let search = window.location.search[1] ?? "a";
+			let searchAdd = window.location.search[1] ?? "a";
 			let i = 0;
 			setInterval(()=>{
 				if (i < 30) {
     				window.open(`https://www.bing.com/search?q=${j}&form=ANSPH1&refig=2B38D6DEA8B64547A764012075C0446F&pc=U531`);
-   				 j+= j;
+   				 search+= searchAdd;
 				i++;
 				}
 			},7000)
